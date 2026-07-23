@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div id="left-column">
+        <p></p>
+        <div id="logo-container">
+            <img class="odin-image" src="./Image-Assets/Odin.png">
+            <h1 class="title">Odin</h1>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="unsplash.org">Unsplash</a></p>
+    </div>
+    <div id="right-column">
+        <p class="intro">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p class="intro">You <em>know</em> you want to.</p>
+        <form id="sign-up">
+            <legend>Let's do this!</legend>
+            <div id="input-container">
+                <fieldset id="input-row">
+                    <div id="input-col">
+                        <label for="user-first-name">First Name</label>
+                        <input type="text" id="user-first-name" name="user-first-name" placeholder="Thor">
+                    </div>
+                    <div id="input-col">
+                        <label for="user-last-name">Last Name</label>
+                        <input type="text" id="user-last-name" name="user-last-name" placeholder="Odison">
+                    </div>
+                </fieldset>
+                <fieldset id="input-row">
+                    <div id="input-col">
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
+                    <div id="input-col">
+                        <label for="user-phone-number">Phone Number</label>
+                        <input type="tel" id="user-phone-number" name="user-phone-number">
+                    </div>
+                </fieldset>
+                <fieldset id="input-row">
+                    <div id="input-col">
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" name="user-password">
+                    </div>
+                    <div id="input-col">
+                        <label for="user-confirm-password">Confirm Password</label>
+                        <input type="password" id="user-confirm-password" name="user-confirm-password">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a>Log in</a></p>
+    </div>
+</body>
+</html>
