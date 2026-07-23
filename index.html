@@ -15,13 +15,13 @@
             <h1 class="title">Odin</h1>
         </div>
         <p></p>
+        <p></p>
         <p class="credit">Photo by <a class="credit-link" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a class="credit-link" href="unsplash.org">Unsplash</a></p>
     </div>
     <div id="right-column">
-
-        <p class="intro">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p class="intro">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams.  Sign up <em>now</em> to get started.</p>
         <p class="intro">You <em>know</em> you want to.</p>
-        <form id="sign-up">
+        <form id="sign-up" action="https://httpbin.org/post" method="POST">
             <legend>Let's do this!</legend>
             <div id="input-container">
                 <fieldset id="input-row">
@@ -41,7 +41,7 @@
                     </div>
                     <div id="input-col">
                         <label for="user-phone-number">Phone Number</label>
-                        <input type="tel" id="user-phone-number" name="user-phone-number">
+                        <input type="tel" id="user-phone-number" name="user-phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                 </fieldset>
                 <fieldset id="input-row">
@@ -56,7 +56,7 @@
                 </fieldset>
             </div>
         </form>
-        <button type="submit" class="submit-button">Create Account</button>
+        <button type="submit" class="submit-button" form="sign-up">Create Account</button>
         <p class="log-in">Already have an account? <a href="" class="log-in-link">Log in</a></p>
     </div>
 </body>
